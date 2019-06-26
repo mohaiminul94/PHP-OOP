@@ -24,12 +24,15 @@ class User {
         $this->setAge($age);
     }
 
+    function __toString()
+    {
+        return "Hello,".$this->getName()."."."<br>Your age is ".$this->getAge();
+    }
+
 }
 
 $newUser= new User('Rabid',24);
 
-echo "Name:".$newUser->getName();
-echo "</br>";
-echo "Age:".$newUser->getAge();
+echo $newUser;
 
 ?>
