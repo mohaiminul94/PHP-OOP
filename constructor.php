@@ -1,38 +1,24 @@
 <?php
 
-class User {
-    public $name;
-    public $age;
+class Person {
 
-    public function getName() {
-        return $this->name;
-    }
-    public function getAge() {
-        return $this->age;
-    }
-    
-    public function setName($name) {
+    public $name, $age;
+
+    function __construct($name= "No name", $age= 0) {
         $this->name= $name;
-    }
-    public function setAge($age) {
         $this->age= $age;
     }
 
-    function __construct($name,$age)
-    {
-        $this->setName($name);
-        $this->setAge($age);
-    }
-
-    function __toString()
-    {
-        return "Hello,".$this->getName()."."."<br>Your age is ".$this->getAge();
+    function show() {
+        echo "Name: " .$this->name." -- Age: ".$this->age."<br>";
     }
 
 }
 
-$newUser= new User('Rabid',24);
+$p1= new Person("Rabid", 26);
+$p2= new Person();
 
-echo $newUser;
+$p1->show();
+$p2->show();
 
 ?>

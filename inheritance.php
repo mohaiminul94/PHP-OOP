@@ -1,25 +1,42 @@
-<?php 
+<?php
 
-class ParentClass {
-    public $parentName= "Mr & Mrs Islam";
+class Employee {
 
-    public function countSiblings() {
-        return 1;
+    public $name, $age, $salary;
+
+    function __construct($n,$a, $s) {
+        $this->name= $n;
+        $this->age= $a;
+        $this->salary= $s;
     }
+
+    function info() {
+        echo "<strong>Employee Info</strong> <br><br>";
+        echo "Name: ". $this->name. "<br>";
+        echo "Age: ". $this->age. "<br>";
+        echo "Salary: ". $this->salary. "<br>";
+    }
+
 }
 
-class childClass extends ParentClass{
-    public $sibling= "Islam's";
+class Manager extends Employee {
+
+    public $ta= 2000, $phone= 600, $totalSalary;
+
+    function info() {
+        $this->totalSalary= $this->salary + $this->ta + $this->phone;
+        echo "<br><br><strong>Manager Info</strong> <br><br>";
+        echo "Name: ". $this->name. "<br>";
+        echo "Age: ". $this->age. "<br>";
+        echo "Salary: ". $this->totalSalary . "<br>";
+    }
+
 }
 
+$e1= new Employee("Rabid Islam", 26, 30000);
+$e1->info();
 
-$obj= new childClass;
-
-echo $obj->parentName;
-echo "<br>";
-echo $obj->countSiblings();
-echo "<br>";
-echo $obj->sibling;
-echo "<br>";
+$e2= new Manager("Mr. Rabid", 27, 30000);
+$e2->info();
 
 ?>
