@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2193f5-8ecd-4d8f-9351-73c1e994a64d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/late-static-binding.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static-members.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trait-method-overriding.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traits.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +38,8 @@
       <updated>1627139592470</updated>
       <workItem from="1627139594888" duration="1574000" />
       <workItem from="1627221184167" duration="6447000" />
-      <workItem from="1627281586953" duration="3529000" />
+      <workItem from="1627281586953" duration="3742000" />
+      <workItem from="1627740388582" duration="2557000" />
     </task>
     <servers />
   </component>
